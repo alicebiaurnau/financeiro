@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/despesas.css">
+</head>
+<body>
+<h1>Controle Pessoal de Finanças</h1>
+
+<h2>Salário</h2>
+<p>Digite o salário:</p>
+<input type="number" id="salario">
+<button onclick="salvarSalario()">Salvar salário</button>
+
+<h2>Despesas</h2>
+<p><b>Data da despesa:</b></p>
+<input type="date" id="data">
+
+<p><b>Nome da despesa:</b></p>
+<input type="text" id="nome">
+
+<p><b>Valor da despesa:</b></p>
+<input type="number" id="valor">
+<button onclick="adicionarDespesa()">Adicionar despesa</button><br>
+
+<h2>Lista de despesas</h2>
+<ul id="listaDespesas"></ul>
+
+<h2>Resumo</h2>
+<p id="resSalario">Salário: R$ 0</p>
+<p id="resDespesas">Total de despesas: R$ 0</p>
+<p id="resSaldo">Saldo final: R$ 0</p>
+
+<button onclick="apagarTudo()">Apagar tudo</button>
+
+<script src="js/despesas.js"></script>
+</body>
+</html>
