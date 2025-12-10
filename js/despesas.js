@@ -102,5 +102,18 @@ function apagarTudo() {
     document.getElementById("salario").value = "";
 }
 
+function editar(){
+    var novosalario = prompt("Digite o novo salário: ");
+    if(novosalario == ""){
+        alert("Digite um novo salário");
+        return;
+    }
+    salario = novosalario;
+    localStorage.setItem("salario", salario);
+    document.getElementById("salario").value = salario;
+    atualizarResumo();
+}
+
 listarDespesas();
 atualizarResumo();
+
